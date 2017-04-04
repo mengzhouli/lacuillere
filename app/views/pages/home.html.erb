@@ -1,0 +1,12 @@
+
+<form action="/restaurants" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="name">
+  <input type="text" name="address">
+  <input type="submit">
+</form>
+
+
+<%= link_to "Know more about us", about_path %>
+<!-- finds a path with about name in the router.rb -->
+<%= link_to "Discover all our restaurants", restaurants_path %>
